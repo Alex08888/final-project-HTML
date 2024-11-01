@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW6.1</title>
+    <link rel="shortcut icon" href="img/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style-contact-form.css">
+</head>
+<body>
+
+<div id="wrapper">
+    <h3>Contact Form</h3>
+
+    <div class="container">
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+            <label for="tel">Your phone number</label>
+            <input type="text" id="tel" name="tel" placeholder="Your phone number.." required>
+
+            <label for="country">Citizenship</label>
+            <select id="country" name="country">
+                <option value="ukraine">Ukraine</option>
+                <option value="german">German</option>
+                <option value="poland">Poland</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Text your message..." style="height:200px"
+                      required></textarea>
+
+            <button class="button" type="button"><span>Send</span></button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
