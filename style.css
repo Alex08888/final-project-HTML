@@ -6,34 +6,30 @@
 }
 
 /*------------------section header-------------------*/
-.header {
+header {
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    gap: 167px;
+    justify-content: space-evenly;
     padding-top: 112px;
 }
 
-.header h1 {
+header h1 {
     width: 100%;
     max-width: 475px;
     color: #222;
     font-family: Poppins, sans-serif;
     font-size: 40px;
-    font-style: normal;
     font-weight: 600;
-    line-height: 62px; /* 155% */
+    line-height: 62px;
 }
 
-.header p {
+header p {
     width: 509px;
     color: #222;
     font-family: Poppins, sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 30px; /* 166.667% */
+    line-height: 30px;
     padding: 7px 0 54px;
 }
 
@@ -77,9 +73,7 @@
     color: #F9F9F9;
     font-family: Poppins, sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
 }
 
 .download-cv {
@@ -93,14 +87,12 @@
     color: rgba(34, 34, 34, 0.50);
     font-family: Poppins, sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
 }
 
-
 /*---------------------section main----------------------*/
-.main {
+
+main {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -114,32 +106,28 @@
     border-radius: 35px;
     background: #FF7315;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     margin-bottom: 60px;
 }
 
 .main-completed-projects img {
-    max-width: 430px;
-    height: 50vh;
+    min-width: 430px;
+    padding: 93px 32px 97px 32px;
 }
 
 .main-completed-projects h4 {
-    max-width: 70vw;
-
+    width: 100%;
     color: #F9F9F9;
     font-family: Poppins, sans-serif;
     font-size: 72px;
-    font-style: normal;
     font-weight: 600;
     line-height: 62px; /* 86.111% */
+    padding-top: 62px;
 }
 
 .main-completed-projects span {
     color: #F9F9F9;
     font-family: Poppins, sans-serif;
     font-size: 24px;
-    font-style: normal;
     font-weight: 400;
     line-height: 36px; /* 150% */
 }
@@ -148,7 +136,6 @@
     color: #F9F9F9;
     font-family: Poppins, sans-serif;
     font-size: 24px;
-    font-style: normal;
     font-weight: 400;
     line-height: 45px; /* 187.5% */
     width: 570px;
@@ -156,10 +143,8 @@
 
 .main-completed-projects .glad-to-help {
     color: #F9F9F9;
-    /* Heading 1 */
     font-family: Poppins, sans-serif;
     font-size: 48px;
-    font-style: normal;
     font-weight: 600;
     line-height: 62px; /* 129.167% */
     padding: 19px 0 19px 0;
@@ -179,11 +164,8 @@
     width: 100%;
     color: #222;
     text-align: center;
-
-    /* Heading 1 */
     font-family: Poppins, sans-serif;
     font-size: 48px;
-    font-style: normal;
     font-weight: 600;
     line-height: 62px; /* 129.167% */
 }
@@ -212,11 +194,8 @@
 .icon .title {
     color: #222;
     text-align: center;
-
-    /* Heading 4 */
     font-family: Poppins, sans-serif;
     font-size: 24px;
-    font-style: normal;
     font-weight: 500;
     line-height: 36px; /* 150% */
     padding: 51px 0 12px 0;
@@ -226,51 +205,43 @@
     width: 240px;
     color: rgba(34, 34, 34, 0.50);
     text-align: center;
-
-    /* Body Text */
     font-family: Poppins, sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 30px; /* 166.667% */
+    line-height: 30px;
 }
 
 /*----------------------section Portfolio----------------------------*/
 
+.portfolio{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 .portfolio-caption {
     width: 100%;
     color: #222;
     font-family: Poppins, sans-serif;
     font-size: 48px;
-    font-style: normal;
     font-weight: 600;
     line-height: 123.6%; /* 59.328px */
     text-transform: capitalize;
     padding: 65px 0 32px 150px;
 }
 
-.portfolio {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-bottom: 65px;
-}
-
 .portfolio-images {
-    padding-top: 32px;
     display: grid;
+    align-content: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 24px;
-    grid-auto-flow: row;
-    grid-template-areas:
-    ". . ."
-    ". . .";
 }
 
 .portfolio-images img {
     transition: 1s;
+    max-width: 310px;
 }
 
 .portfolio-images img:hover {
@@ -287,19 +258,19 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 60px;
+    margin: 60px 0 60px 0;
 }
 
 .middle h5 {
     text-align: center;
     height: 120px;
+    width: 100%;
     color: #F9F9F9;
     font-family: Poppins, sans-serif;
     font-size: 48px;
-    font-style: normal;
     font-weight: 600;
-    line-height: 60px; /* 125% */
-    padding: 48px 416px 0 415px
+    line-height: 60px;
+    padding-top: 48px;
 }
 
 .middle .block-left, .block-right {
@@ -312,24 +283,31 @@
 
 .middle p {
     width: 450px;
-    text-align: left;
     color: #222;
     font-family: Poppins, sans-serif;
     font-size: 24px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     padding: 24px 0 0 50px;
 }
 
 /*---------------------------section Price-Plans-----------------*/
 
-.price-cards {
+.price-plans {
+    width: 100vw;
     display: flex;
-    justify-content: center;
-    align-content: center;
     flex-wrap: wrap;
-    gap: 64px;
+    margin-bottom: 50px;
+}
+
+.plans-cards {
+    display: flex;
+    gap: 67px;
+    padding-top: 32px;
+    padding-left: 150px;
+}
+
+.price-plans div {
+    width: 100%;
 }
 
 .plans {
@@ -338,31 +316,54 @@
     color: #222;
     font-family: Poppins, sans-serif;
     font-size: 48px;
-    font-style: normal;
     font-weight: 600;
-    line-height: 123.6%; /* 59.328px */
+    line-height: 123.6%;
     text-transform: capitalize;
-    padding-top: 125px;
+    padding-top: 65px;
 }
 
 .card {
-    flex-direction: column;
-    width: 335px;
+    max-width: 335px;
     height: 500px;
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    left: 12%;
+    transform: translate(-50%, -50%);
+    padding-top: 32px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(0);
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: transform 0.5s ease;
     border-radius: 15px;
     background: #F9F9F9;
     box-shadow: 0 20px 40px 0 rgba(255, 115, 21, 0.10);
 }
 
-.close{
-    opacity: 0.5;
+.front {
+    transform: perspective(600px) rotateY(0);
 }
 
-.card-top {
+.front .card-top {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 335px;
+    width: 100%;
     height: 66px;
     border-radius: 15px 15px 0 0;
     background: #FF9B70;
@@ -370,7 +371,6 @@
     color: #F9F9F9;
     font-family: Poppins, sans-serif;
     font-size: 24px;
-    font-style: normal;
     font-weight: 600;
     line-height: 123.6%; /* 29.664px */
     text-transform: capitalize;
@@ -382,9 +382,8 @@
     font-feature-settings: 'calt' off;
     font-family: Poppins, sans-serif;
     font-size: 15px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 24px; /* 160% */
+    line-height: 24px;
     text-transform: capitalize;
     opacity: 0.5;
 }
@@ -394,35 +393,98 @@
     color: #2B2B2B;
     font-family: Poppins, sans-serif;
     font-size: 32px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 123.6%; /* 39.552px */
+    line-height: 123.6%;
     text-transform: capitalize;
     padding-top: 36px;
     gap: 12px;
 }
 
-.price-cards ul {
+.front ul {
     color: #222;
-    font-kerning: none;
-    font-feature-settings: 'calt' off;
     font-family: Poppins, sans-serif;
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 171.429% */
+    line-height: 24px;
     text-transform: capitalize;
     padding-top: 29px;
 }
 
-.price-cards li {
+.front li {
     display: flex;
-    align-items: center;
     height: 35px;
 }
 
-.price-cards img {
+.front img {
+    min-width: 24px;
+    height: 24px;
     padding: 0 16px 0 48px;
+    color: chocolate;
+}
+
+.close {
+    opacity: 0.5;
+}
+
+.back {
+    transform: perspective(600px) rotateY(180deg);
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.back h1 {
+    color: #444;
+    font-size: 24px;
+}
+
+.back h1 span {
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 5px 0 10px;
+}
+
+.back .socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.back .socials a {
+    color: #444;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    border-radius: 50%;
+    transition: 0.4s ease;
+}
+
+.back .socials a:hover {
+    background-color: #444;
+    color: #fff;
+}
+
+.fa-telegram {
+    color: chocolate;
+}
+
+.fa-instagram {
+    color: dodgerblue;
+}
+
+.fa-twitter {
+    color: deeppink;
+}
+
+.fa-facebook {
+    color: dodgerblue;
 }
 
 /*---------------------poster Send-E-mail---------------*/
@@ -444,7 +506,6 @@
     color: #F9F9F9;
     font-family: Poppins, sans-serif;
     font-size: 36px;
-    font-style: normal;
     font-weight: 600;
     line-height: 62px; /* 172.222% */
 }
@@ -461,9 +522,7 @@
     color: #222;
     font-family: Poppins, sans-serif;
     font-size: 24px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     transition: all 1s;
 }
 
@@ -492,7 +551,6 @@
     color: #222;
     font-family: Poppins, sans-serif;
     font-size: 48px;
-    font-style: normal;
     font-weight: 600;
     line-height: 62px; /* 129.167% */
     padding: 125px 0 48px 150px;
@@ -519,7 +577,6 @@
     color: #222;
     font-family: Poppins, sans-serif;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 123.6%; /* 19.776px */
     text-transform: capitalize;
@@ -533,9 +590,8 @@
     font-feature-settings: 'calt' off;
     font-family: Poppins, sans-serif;
     font-size: 12px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 200% */
+    line-height: 24px;
     text-transform: capitalize;
     padding: 6px 0 0 14px;
 }
@@ -549,9 +605,9 @@ footer {
     color: #222;
     font-family: Poppins, sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 500;
     line-height: normal;
     background: #F1F1F1;
+    margin-top: 130px;
 }
 
